@@ -3,6 +3,9 @@
 # Copyright (C) 2020 azrim.
 # All rights reserved.
 
+#pix eror disini ehe
+sudo apt update;sudo apt install gcc-aarch64-linux-gnu gcc-arm-linux-gnueabi bison bc flex python-is-python3 lld bintuils -y
+
 # Init
 KERNEL_DIR="${PWD}"
 KERN_IMG="${KERNEL_DIR}"/out/arch/arm64/boot/Image.gz-dtb
@@ -28,23 +31,23 @@ DEFCONFIG="vince_defconfig"
 REGENERATE_DEFCONFIG="false" # unset if don't want to regenerate defconfig
 
 # Costumize
-KERNEL="AL-Kernel"
+KERNEL="Discussion-verse"
 DEVICE="Vince"
-KERNELTYPE="R1"
+KERNELTYPE="Beta"
 KERNELNAME="${KERNEL}-${DEVICE}-${KERNELTYPE}-$(TZ=Asia/Jakarta date +%y%m%d-%H%M)"
 TEMPZIPNAME="${KERNELNAME}.zip"
 ZIPNAME="${KERNELNAME}.zip"
 
 
 # Telegram
-CHATIDQ="-1002001516627"
-CHATID="-1002001516627"
-TELEGRAM_TOKEN="6661722181:AAHA86zdVQTkkAU7FQowuZa1RJk7tCBQCmY"
+CHATIDQ="-1001949449182"
+CHATID="-1001949449182"
+TELEGRAM_TOKEN="6958149447:AAF-GLC5WcpN3Zb9G9XWRL2uiiMX9exbKWc"
 
 # Export Telegram.sh
 TELEGRAM_FOLDER=/workspace/telegram
 if ! [ -d "${TELEGRAM_FOLDER}" ]; then
-    git clone https://github.com/nekoprjkt/telegram.sh/ "${TELEGRAM_FOLDER}"
+    git clone https://github.com/OnTheWay69/telegram.sh/ "${TELEGRAM_FOLDER}"
 fi
 
 TELEGRAM="${TELEGRAM_FOLDER}"/telegram
